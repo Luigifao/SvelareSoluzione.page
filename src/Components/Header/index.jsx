@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import logo from '/src/assets/img/logo.png';
 import menu from '/src/assets/img/menu.svg';
 import close from '/src/assets/img/close.svg';
+import { Link } from 'react-router-dom';
 
 function Header() {
     const [isSticky, setIsSticky] = useState(false);
@@ -43,6 +44,7 @@ function Header() {
                         <li><a href="#sobre">SOBRE</a></li>
                         <li><a href="#parceiros">PARCEIROS</a></li>
                         <li><a href="#contato">FALE CONOSCO</a></li>
+                        <li><Link to="/Divorcio">INVENTARIO</Link></li>
                     </ul>
                 </nav>
             </div>
@@ -59,6 +61,7 @@ function Header() {
                     <li><a href="#sobre">SOBRE</a></li>
                     <li><a href="#parceiros">PARCEIROS</a></li>
                     <li><a href="#contato">FALE CONOSCO</a></li>
+                      <li><Link to="/Divorcio">INVENTARIO</Link></li>
                 </ul>
             </nav>
         </header>
