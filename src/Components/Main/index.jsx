@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from './Main.module.css';
 import "animate.css";
 import AOS from "aos";
@@ -8,6 +9,8 @@ import "aos/dist/aos.css";
 import logomarca from '/src/assets/img/logomarca.png';
 
 function Main() {
+    const navigate = useNavigate();
+
     useEffect(() => {
         AOS.init({
             duration: 1000, // Duração da animação
@@ -15,6 +18,18 @@ function Main() {
             once: true, // Animação ocorre apenas uma vez
         });
     }, []);
+
+    const handleContactClick = () => {
+        // Navegar para a seção de contato
+        const contatoSection = document.querySelector('#contato');
+        if (contatoSection) {
+            contatoSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const handleGuiaInventarioClick = () => {
+        navigate('/guia-inventario');
+    };
 
     return (
         <main className={styles.mainPage}>
@@ -27,7 +42,16 @@ function Main() {
                 <div className={styles.text}>
                     <p className="animate__animated">A Justiça do futuro</p>
                     <h1 className="animate__animated">Resolução de leeds de forma rápida</h1>
-                    <button className="animate__animated">QUERO ENTRAR EM CONTATO</button>
+                    <button className="animate__animated" onClick={handleContactClick}>
+                        QUERO ENTRAR EM CONTATO
+                    </button>
+                    <button 
+                        className="animate__animated" 
+                        onClick={handleGuiaInventarioClick}
+                        style={{ marginLeft: '10px' }}
+                    >
+                        GUIA DE INVENTÁRIO
+                    </button>
                 </div>
             </div>
 

@@ -1,10 +1,12 @@
 import styles from './Header.module.css';
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from '/src/assets/img/logo.png';
 import menu from '/src/assets/img/menu.svg';
 import close from '/src/assets/img/close.svg';
 
 function Header() {
+    const navigate = useNavigate();
     const [isSticky, setIsSticky] = useState(false);
     const [IsAberta, setIsAberta] = useState(false);
     const [isFechar, setIsFechar] = useState(false); // Definição do estado para fechamento do menu
@@ -15,6 +17,10 @@ function Header() {
 
     const navbarFechar = () => {
         setIsFechar(!isFechar);
+    };
+
+    const handleLogoClick = () => {
+        navigate('/');
     };
 
     useEffect(() => {
@@ -46,7 +52,7 @@ function Header() {
                     </ul>
                 </nav>
             </div>
-            <div className={styles.logo}>
+            <div className={styles.logo} onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
                 <img src={logo} alt="Logomarca" />
             </div>
             <div className={styles.menu}>

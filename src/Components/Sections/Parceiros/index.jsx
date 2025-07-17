@@ -16,7 +16,7 @@ function Parceiros() {
     }, []);
 
     return (
-        <section className={styles.parceiros} id="parceiros">
+        <section className={styles.parceiros} id="parceiros" >
             <div className={styles.card} data-aos="fade-right">
                 <div className={styles.imgParceiros}>
                     <img src={iconParceiros} alt="IconParceiros" />
