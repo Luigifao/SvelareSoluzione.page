@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './Components/Header'
 import { Routes, Route } from 'react-router-dom'
-import Divorcio from './pages/Divorcio'
+import Divorcio from './pages/Divorcio/Divorcio'
 import Home from './pages/Home'
 
 function App() {
