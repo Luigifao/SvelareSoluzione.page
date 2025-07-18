@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import Main from './Components/Main';
+import Section from './Components/Sections/DivorcioPage';
 
 function Divorcio() {
 
@@ -17,7 +18,7 @@ function Divorcio() {
     return (
         <>
         <Main />
-
+        <Section />
         </>
 
 

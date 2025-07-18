@@ -20,7 +20,7 @@ function Main() {
 
         <>
 
-            <ParticlesBackground />
+          
             <main className={styles.mainPage}>
 
                 <div className={styles.image}>
