@@ -1,0 +1,316 @@
+
+/* Estilos baseados no PDF da Svelare */
+:root {
+  --primary-blue: #2c5aa0;
+  --light-blue: #4a90e2;
+  --text-dark: #2c3e50;
+  --text-gray: #555;
+  --border-gray: #ddd;
+  --bg-light: #f8f9fa;
+  --accent: #e74c3c;
+}
+
+.container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section - Cabeçalho principal */
+.hero {
+  text-align: center;
+  padding: 30px 0 40px;
+  border-bottom: 3px solid var(--primary-blue);
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.hero h2 {
+  font-size: 1.4rem;
+  color: var(--text-gray);
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/* Sections */
+.container section {
+  margin-bottom: 30px;
+}
+
+.container h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-left: 4px solid var(--primary-blue);
+  padding-left: 15px;
+}
+
+.container section p {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Boxes para leis - Estilo caixas destacadas */
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.lawBox,
+.arbBox {
+  border: 2px solid var(--primary-blue);
+  padding: 20px;
+  background: linear-gradient(145deg, #f0f4ff 0%, #e6f0ff 100%);
+  border-radius: 8px;
+  position: relative;
+}
+
+.lawBox::before,
+.arbBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--primary-blue);
+  border-radius: 8px 8px 0 0;
+}
+
+.lawBox h4,
+.arbBox h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.lawBox p,
+.arbBox p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Checklist - Lista de requisitos */
+.checklist {
+  list-style: none;
+  margin-left: 0;
+}
+
+.checklist > li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.checklist > li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.checklist li ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.checklist li ul li {
+  margin-bottom: 5px;
+  padding-left: 0;
+}
+
+.checklist li ul li::before {
+  display: none;
+}
+
+.checklist strong {
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+/* Two-column layout */
+.twoCols {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin: 30px 0;
+  padding: 25px;
+  background: var(--bg-light);
+  border-radius: 8px;
+  border-left: 5px solid var(--primary-blue);
+}
+
+.twoCols > div h3 {
+  border-left: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.twoCols ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.twoCols ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+/* Table - Tabela comparativa */
+.tableWrapper {
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.container th {
+  background: var(--primary-blue);
+  color: white;
+  padding: 15px 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.container td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-gray);
+  font-size: 0.85rem;
+}
+
+.container tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.container tr:hover {
+  background: #e6f0ff;
+}
+
+/* Primeira coluna (Aspecto) com destaque */
+.container td:first-child {
+  background: #f0f4ff;
+  font-weight: bold;
+  text-align: left;
+  color: var(--primary-blue);
+}
+
+/* Footer interno da página */
+.container footer {
+  margin-top: 40px;
+  padding: 25px 0;
+  border-top: 3px solid var(--primary-blue);
+  text-align: center;
+  background: linear-gradient(145deg, #f0f4ff 0%, #e6f0ff 100%);
+  border-radius: 8px;
+}
+
+.container footer p {
+  margin-bottom: 15px;
+  font-style: italic;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+.container footer p:last-child {
+  font-weight: bold;
+  color: var(--primary-blue);
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+    margin: 0 10px;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+  
+  .boxes,
+  .twoCols {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .container h3 {
+    font-size: 1.1rem;
+  }
+  
+  .tableWrapper {
+    font-size: 0.8rem;
+  }
+  
+  .container th, .container td {
+    padding: 8px 6px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 10px;
+  }
+  
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 1rem;
+  }
+  
+  .lawBox,
+  .arbBox {
+    padding: 15px;
+  }
+  
+  .twoCols {
+    padding: 15px;
+  }
+}

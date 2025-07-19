@@ -23,7 +23,7 @@ function Footer() {
                 <img src={iconWhasapp} alt="zapIcon" />
             </div>
             <div className={styles.content}>
-                <p>Copyright 2024. Todos os Direitos Reservados. Svelare Soluzione. Desenvolvido por @dev_luigifernando & @Ryuzz9</p>
+                <p>Copyright 2024. Todos os Direitos Reservados. Svelare Soluzione. Desenvolvido por @dev_luigifernando & @Ryuzz9</p>
 
             </div>
             </div>
