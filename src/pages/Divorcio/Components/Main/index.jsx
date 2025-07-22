@@ -26,7 +26,7 @@ function Main() {
                 <div className={styles.image}>
                     <img src={logo} alt="logo" />
                 </div>
-                <h1>ola</h1>
+                
             </main>
 
         </>

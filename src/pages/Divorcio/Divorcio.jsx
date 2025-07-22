@@ -3,6 +3,11 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import Main from './Components/Main';
 import Section from './Components/Sections/DivorcioPage';
+import About from './Components/Sections/About';
+import LeiArbitragem from './Components/Sections/LeiDeArbitragem';
+import SetencaArbitral from './Components/Sections/SetencaArbitral';
+import Requisitos from './Components/Sections/Requisitos';
+import Setenca2 from './Components/Sections/SetencaArbitral2';
 
 function Divorcio() {
 
@@ -19,6 +24,11 @@ function Divorcio() {
         <>
         <Main />
         <Section />
+        <About />
+        <LeiArbitragem />
+        <SetencaArbitral />
+        <Requisitos />
+        <Setenca2 />
         </>
 
 
