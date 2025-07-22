@@ -1,28 +1,75 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './GuiaInventario.module.css';
 import Header from '../Components/Header';
 import Footer from '../Components/Sections/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function GuiaInventario() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100,
+      anchorPlacement: 'top-bottom'
+    });
+  }, []);
+
   return (
     <>
       <Header />
       <div className={styles.container}>
-        <header className={styles.hero}>
-          <h1>SVELARE CÂMARA ARBITRAL</h1>
-          <h2>INVENTÁRIO EXTRAJUDICIAL POR ARBITRAGEM</h2>
+        <header 
+          className={styles.hero}
+          data-aos="fade-down"
+          data-aos-duration="1200"
+          data-aos-delay="200"
+        >
+          <h1 
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            SVELARE CÂMARA ARBITRAL
+          </h1>
+          <h2 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
+            INVENTÁRIO EXTRAJUDICIAL POR ARBITRAGEM
+          </h2>
         </header>
 
-      <section>
-        <h3>O que é?</h3>
-        <p>
+      <section 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="1000"
+      >
+        <h3 
+          data-aos="slide-right"
+          data-aos-duration="800"
+          data-aos-delay="1200"
+        >
+          O que é?
+        </h3>
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          data-aos-delay="1400"
+        >
           O inventário extrajudicial por arbitragem é uma solução moderna, eficaz e
           absolutamente legal para a partilha de bens deixados por pessoa falecida. Trata-se de
           um procedimento realizado fora do Poder Judiciário, conduzido com base na autonomia das
           partes e regulamentado por normas jurídicas plenamente reconhecidas no ordenamento
           brasileiro.
         </p>
-        <p>
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          data-aos-delay="1600"
+        >
           Na Câmara Arbitral SVELARE LTDA, esse procedimento é conduzido com total sigilo,
           agilidade e economia, proporcionando às partes interessadas uma experiência segura,
           objetiva e muito menos burocrática do que as alternativas tradicionais. Ao optar pela
@@ -31,8 +78,18 @@ export default function GuiaInventario() {
         </p>
       </section>
 
-        <div className={styles.boxes}>
-          <div className={styles.lawBox}>
+        <div 
+          className={styles.boxes}
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1800"
+        >
+          <div 
+            className={styles.lawBox}
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="2000"
+          >
             <h4>LEI Nº 9.307/1996</h4>
           <p>Lei de Arbitragem</p>
           <p>
@@ -40,7 +97,12 @@ export default function GuiaInventario() {
             meio de árbitros escolhidos pelas partes.
           </p>
           </div>
-          <div className={styles.arbBox}>
+          <div 
+            className={styles.arbBox}
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="2200"
+          >
             <h4>ART. 515 – TÍTULOS EXECUTIVOS JUDICIAIS</h4>
           <p>VII – A SENTENÇA ARBITRAL.</p>
           <p>
@@ -52,30 +114,69 @@ export default function GuiaInventario() {
         </div>
       </div>
 
-      <section>
-        <p>
+      <section 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="2400"
+      >
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          data-aos-delay="2600"
+        >
           Portanto, havendo consenso entre os herdeiros, ausência de testamento e plena capacidade
           civil, é não apenas possível, mas plenamente legal, legítimo e recomendado realizar o
           inventário pela via arbitral.
         </p>
       </section>
 
-      <section>
-        <h3>Requisitos para Inventário</h3>
-        <ul className={styles.checklist}>
-          <li>
+      <section 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="2800"
+      >
+        <h3 
+          data-aos="slide-right"
+          data-aos-duration="800"
+          data-aos-delay="3000"
+        >
+          Requisitos para Inventário
+        </h3>
+        <ul 
+          className={styles.checklist}
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="3200"
+        >
+          <li
+            data-aos="slide-up"
+            data-aos-duration="600"
+            data-aos-delay="3400"
+          >
             <strong>Capacidade e consenso:</strong> Todos os herdeiros devem ser maiores de idade,
             plenamente capazes e estar de comum acordo quanto à partilha dos bens.
           </li>
-          <li>
+          <li
+            data-aos="slide-up"
+            data-aos-duration="600"
+            data-aos-delay="3600"
+          >
             <strong>Ausência de testamento:</strong> Não deve haver testamento registrado em nome
             do falecido.
           </li>
-          <li>
+          <li
+            data-aos="slide-up"
+            data-aos-duration="600"
+            data-aos-delay="3800"
+          >
             <strong>Compromisso arbitral:</strong> Os interessados devem firmar o compromisso
             arbitral, manifestando sua vontade de resolver a questão pela via da arbitragem.
           </li>
-          <li>
+          <li
+            data-aos="slide-up"
+            data-aos-duration="600"
+            data-aos-delay="4000"
+          >
             <strong>Documentação essencial:</strong>
             <ul>
               <li>Certidão de óbito;</li>
@@ -94,12 +195,25 @@ export default function GuiaInventario() {
         </ul>
       </section>
 
-      <section className={styles.twoCols}>
-        <div>
+      <section 
+        className={styles.twoCols}
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="4200"
+      >
+        <div
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-delay="4400"
+        >
           <h3>Prazo</h3>
           <p>Até <strong>90 DIAS CORRIDOS</strong></p>
         </div>
-        <div>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-delay="4600"
+        >
           <h3>Investimento</h3>
           <p>
             A SVELARE LTDA adota uma política de custos transparente e acessível. Os honorários
@@ -117,9 +231,24 @@ export default function GuiaInventario() {
         </div>
       </section>
 
-      <section>
-        <h3>Tabela Comparativa</h3>
-        <div className={styles.tableWrapper}>
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="4800"
+      >
+        <h3
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-delay="5000"
+        >
+          Tabela Comparativa
+        </h3>
+        <div 
+          className={styles.tableWrapper}
+          data-aos="fade-in"
+          data-aos-duration="1200"
+          data-aos-delay="5200"
+        >
           <table>
             <thead>
               <tr>
@@ -183,14 +312,28 @@ export default function GuiaInventario() {
         </div>
       </section>
 
-      <footer>
-        <p>
+      <footer
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="5400"
+      >
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          data-aos-delay="5600"
+        >
           Optar pelo inventário por arbitragem na Câmara SVELARE LTDA é escolher uma solução
           moderna, segura e eficiente para a partilha de bens. Diferentemente do processo judicial
           lento, público e burocrático ou do inventário cartorial limitado e ainda moroso, a
           arbitragem oferece rapidez, sigilo absoluto, menor custo e total autonomia das partes.
         </p>
-        <p>Soluções legais com humanidade, agilidade e sigilo.</p>
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          data-aos-delay="5800"
+        >
+          Soluções legais com humanidade, agilidade e sigilo.
+        </p>
       </footer>
       </div>
       <Footer />

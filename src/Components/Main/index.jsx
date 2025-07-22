@@ -42,13 +42,14 @@ function Main() {
                 <div className={styles.text}>
                     <p className="animate__animated">A Justiça do futuro</p>
                     <h1 className="animate__animated">Resolução de leeds de forma rápida</h1>
-                    <button className="animate__animated" onClick={handleContactClick}>
+                    <button className="animate__animated" onClick={handleContactClick}
+                        style={{ cursor: 'pointer' }}>
                         QUERO ENTRAR EM CONTATO
                     </button>
                     <button 
                         className="animate__animated" 
                         onClick={handleGuiaInventarioClick}
-                        style={{ marginLeft: '10px' }}
+                        style={{ cursor: 'pointer' }}
                     >
                         GUIA DE INVENTÁRIO
                     </button>
