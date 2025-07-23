@@ -8,6 +8,8 @@ import LeiArbitragem from './Components/Sections/LeiDeArbitragem';
 import SetencaArbitral from './Components/Sections/SetencaArbitral';
 import Requisitos from './Components/Sections/Requisitos';
 import Setenca2 from './Components/Sections/SetencaArbitral2';
+import Investimento from './Components/Sections/Investimento';
+import Tabela from './Components/Sections/TabelaComparativa';
 
 function Divorcio() {
 
@@ -29,6 +31,8 @@ function Divorcio() {
         <SetencaArbitral />
         <Requisitos />
         <Setenca2 />
+        <Investimento />
+        <Tabela />
         </>
 
 
