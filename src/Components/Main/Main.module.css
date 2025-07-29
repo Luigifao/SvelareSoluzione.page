@@ -9,6 +9,8 @@
     margin-top: -80px;
 
 }
+
+
 /*  MEXER NA RESPONSIVIDADE
 
 * {
@@ -17,7 +19,7 @@
     */
 
 .logoMain {
-    position: absolute;
+    
     margin-left: 20%;
     top: 30%;
     transform: translateX(-50%)translateY(-50%);
@@ -29,8 +31,9 @@
 }
 
 .mainPage p {
+
+    
     width: 246px;
-    position: absolute;
     text-align: left;
     display: flex;
     color: white;
@@ -43,7 +46,7 @@
 }
 
 .mainPage h1 {
-    width: 629px;
+    width: 900px;
     text-align: left;
     display: flex;
     color: #FFF;
@@ -56,12 +59,11 @@
 }
 
 .text {
-    position: absolute;
+    
     display: flex;
     flex-direction: column;
-    left: 25%;
-    top: 65%;
-    transform: translateX(-50%)translateY(-50%);
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
 .text h1 {

@@ -41,7 +41,7 @@ function Main() {
 
                 <div className={styles.text}>
                     <p className="animate__animated">A Justiça do futuro</p>
-                    <h1 className="animate__animated">Resolução de leeds de forma rápida</h1>
+                    <h1 className="animate__animated"> Rápida, acessível e online. A SVELARE resolve conflitos com validade judicial, sem filas e com sigilo absoluto.</h1>
                     <button className="animate__animated" onClick={handleContactClick}
                         style={{ cursor: 'pointer' }}>
                         QUERO ENTRAR EM CONTATO
