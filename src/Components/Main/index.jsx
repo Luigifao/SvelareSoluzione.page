@@ -46,13 +46,7 @@ function Main() {
                         style={{ cursor: 'pointer' }}>
                         QUERO ENTRAR EM CONTATO
                     </button>
-                    <button 
-                        className="animate__animated" 
-                        onClick={handleGuiaInventarioClick}
-                        style={{ cursor: 'pointer' }}
-                    >
-                        GUIA DE INVENTÁRIO
-                    </button>
+                  
                 </div>
             </div>
 

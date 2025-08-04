@@ -21,7 +21,7 @@ function Sobre() {
             <div className={styles.card} data-aos="fade-right">
                 <div className={styles.infoCard} data-aos="fade-right">
                     <img src={iconAboutUs} alt="cardIcon" />
-                    <h1>SOBRE O ESCRITÓRIO</h1>
+                    <h1>SOMOS A MAIOR PLATAFORMA 100% DIGITAL DO BRASIL</h1>
                 </div>
                 <div className={styles.subInfo} data-aos="fade-right">
                     <h2>Somos a maior plataforma de arbitragem do Brasil</h2>

@@ -5,10 +5,7 @@ import logo from '/src/assets/img/logo.png';
 import menu from '/src/assets/img/menu.svg';
 import close from '/src/assets/img/close.svg';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
 
-=======
->>>>>>> f1003a838d09c6c42831c8724ccf942be64d3858
 
 function Header() {
     const navigate = useNavigate();
@@ -43,9 +40,9 @@ function Header() {
         <header className={`${styles.header} ${isSticky ? styles.sticky : ''}`}>
             <div className={`${styles.container} ${IsAberta ? styles.menuAberto : styles.navFechar}`}>
                 <div className={styles.fechar}>
-                    
-                    <img src={close} alt="Fechar" onClick={navbarAberta}/>
-                    
+
+                    <img src={close} alt="Fechar" onClick={navbarAberta} />
+
                 </div>
                 <nav className={styles.navbarLateral}>
                     <ul className={styles.navbar2}>
@@ -54,11 +51,11 @@ function Header() {
                         <li><a href="#sobre">SOBRE</a></li>
                         <li><a href="#parceiros">PARCEIROS</a></li>
                         <li><a href="#contato">FALE CONOSCO</a></li>
-<<<<<<< HEAD
+
                         <li><Link to="/guia-divorcio">Divorcio</Link></li>
-=======
-                        <li><Link to="/Divorcio">INVENTARIO</Link></li>
->>>>>>> f1003a838d09c6c42831c8724ccf942be64d3858
+
+                        <li><Link to="/guia-inventario">INVENTARIO</Link></li>
+
                     </ul>
                 </nav>
             </div>
@@ -75,11 +72,14 @@ function Header() {
                     <li><a href="#sobre">SOBRE</a></li>
                     <li><a href="#parceiros">PARCEIROS</a></li>
                     <li><a href="#contato">FALE CONOSCO</a></li>
-<<<<<<< HEAD
-                    <li><Link to="/guia-divorcio">DIVORCIO</Link></li>
-=======
-                      <li><Link to="/Divorcio">INVENTARIO</Link></li>
->>>>>>> f1003a838d09c6c42831c8724ccf942be64d3858
+                    <li className={styles.dropdown}>
+                        <button className={styles.dropdownBtn}>SERVIÇOS ▾</button>
+                        <ul className={styles.dropdownMenu}>
+                            <li><Link to="/guia-divorcio">DIVÓRCIO</Link></li>
+                            <li><Link to="/guia-inventario">INVENTÁRIO</Link></li>
+                        </ul>
+                    </li>
+
                 </ul>
             </nav>
         </header>

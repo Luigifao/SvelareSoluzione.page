@@ -43,6 +43,53 @@
 .navbar li{
      padding: 20px;
 }
+.dropdown {
+  position: relative;
+  
+}
+
+.dropdownBtn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+ 
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 160px;
+  z-index: 1000;
+  border: 1px solid #333;
+  border-radius: 10px;
+   
+
+}
+
+.dropdownMenu li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  
+}
+
+.dropdownMenu li a:hover {
+  background-color: #222;
+}
+
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+
 
 
 
