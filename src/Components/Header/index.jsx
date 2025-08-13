@@ -55,6 +55,7 @@ function Header() {
                         <li><Link to="/guia-divorcio">Divorcio</Link></li>
 
                         <li><Link to="/guia-inventario">INVENTARIO</Link></li>
+                        <li><Link to="/arbitragem">ARBITRAGEM</Link></li>
 
                     </ul>
                 </nav>
@@ -77,6 +78,7 @@ function Header() {
                         <ul className={styles.dropdownMenu}>
                             <li><Link to="/guia-divorcio">DIVÓRCIO</Link></li>
                             <li><Link to="/guia-inventario">INVENTÁRIO</Link></li>
+                            <li><Link to="/arbitragem">ARBITRAGEM</Link></li>
                         </ul>
                     </li>
 
