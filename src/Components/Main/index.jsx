@@ -20,11 +20,11 @@ function Main() {
     }, []);
 
     const handleContactClick = () => {
-        // Navegar para a seção de contato
-        const contatoSection = document.querySelector('#contato');
-        if (contatoSection) {
-            contatoSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        // Redirecionar para WhatsApp
+        const phoneNumber = "+553196051534"; 
+        const message = "Olá! Gostaria de entrar em contato com a Svelare para saber mais sobre os serviços de arbitragem.";
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
     };
 
     const handleGuiaInventarioClick = () => {

@@ -18,7 +18,7 @@ function Home() {
       <SaibaMais />
       <Sobre />
       <Parceiros />
-      <Contato />
+      {/* <Contato /> */}
       <Footer />
     </>
   )

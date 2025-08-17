@@ -21,10 +21,10 @@ function Sobre() {
             <div className={styles.card} data-aos="fade-right">
                 <div className={styles.infoCard} data-aos="fade-right">
                     <img src={iconAboutUs} alt="cardIcon" />
-                    <h1>SOMOS A MAIOR PLATAFORMA 100% DIGITAL DO BRASIL</h1>
+                    <h1>SOBRE O ESCRITÓRIO</h1>
                 </div>
                 <div className={styles.subInfo} data-aos="fade-right">
-                    <h2>Somos a maior plataforma de arbitragem do Brasil</h2>
+                    <h2>Somos a maior plataforma de arbitragem 100% digital do Brasil</h2>
                     <div className={styles.line}></div>
                     <p><h3 className={styles.destque}>Henrique de Oliveira e Silva</h3> <br /> Sou empresário com atuação voltada à Arbitragem e à mediação de controvérsias, com ampla experiência em negociações e na resolução extrajudicial de litígios. Acredito que a maioria dos conflitos contemporâneos pode ser solucionada de forma célere, eficaz e menos onerosa, sem a necessidade de recorrer ao moroso e burocrático sistema judicial.
                         <br /> <br />Foi com essa convicção que fundei a Svelare, uma câmara arbitral comprometida com a democratização do acesso à Justiça e com a promoção de soluções práticas, sigilosas e descomplicadas para empresas e particulares. Nossa missão é oferecer um ambiente seguro, imparcial e acessível para que as partes envolvidas encontrem, com autonomia e responsabilidade, a melhor solução para seus impasses.</p><br /><br />

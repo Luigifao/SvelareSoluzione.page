@@ -14,10 +14,11 @@
     width: 80%;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 48px;
+    line-height: 58px;
     color: #B79E5F;
     margin-bottom: 40px;
+    margin-left: 3%;
 }
 
 .content p {
@@ -25,8 +26,8 @@
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 24px;
+    line-height: 29px;
     color: #FFFFFF;
 
 }
@@ -56,4 +57,25 @@
 }
 .description{
     margin-left: 10%;
+}
+
+@media (max-width: 1366px){
+    .content h1 {
+        width: 80%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        font-size: 28px;
+        line-height: 40px;
+        color: #B79E5F;
+        margin-bottom: 40px;
+    }
+
+    .content p {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
 }

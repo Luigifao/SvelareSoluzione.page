@@ -1,16 +1,17 @@
-*{
-    outline: 1px solid red;
-}
+
 
 .container {
     width: 100%;
-    height: 92vh;
+    min-height: 92vh;
+    height: auto;
     background: #FAF6F6;
+    padding-bottom: 50px;
 }
 
 .content {
     margin-left: 10%;
     display: flex;
+    padding-bottom: 30px;
 }
 
 .title {
@@ -23,7 +24,7 @@
     width: 80%;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    font-size: 36px;
+    font-size: 48px;
     line-height: 58px;
     color: #B79E5F;
     margin-bottom: 40px;
@@ -33,10 +34,10 @@
     width: 30%;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 24px;
+    line-height: 29px;
     color: #000000;
-
+    margin-bottom: 20px;
 }
 
 .description img {
@@ -68,8 +69,10 @@
 
     .container {
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
         background: #FAF6F6;
+        padding-bottom: 40px;
     }
 
     .content {
@@ -98,8 +101,8 @@
         width: 100%;
         font-family: 'Poppins', sans-serif;
         font-weight: 200;
-        font-size: 14px;
-        line-height: 15px;
+        font-size: 16px;
+        line-height: 20px;
         color: #000000;
 
     }

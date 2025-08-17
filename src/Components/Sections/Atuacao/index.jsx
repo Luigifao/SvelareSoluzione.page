@@ -41,6 +41,14 @@ function Atuacao() {
     const handleClick1 = () => {
         setIsRotaded1(!isRotated1);
     }
+
+    const handleWhatsAppClick = () => {
+        // Redirecionar para WhatsApp
+        const phoneNumber = "+55319605-1534"; // Substitua pelo número real
+        const message = "Olá! Gostaria de falar com um especialista da Svelare sobre os serviços de atuação (Extrajudicial, Arbitragem e Mediação).";
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    };
  
  // Inicializa o AOS
     useEffect(() => {
@@ -117,7 +125,7 @@ function Atuacao() {
                     saiba mais <img src={setaIcon} alt=""  className={`${styles.arrow} ${isRotated2 ? styles.rotated : ""}`}/>
                 </button>
             </div>
-            <button className={styles.btn2}><img src={whatsappIcon} alt="zapIcon" />FALAR COM UM ESPECIALISTA</button>
+            <button className={styles.btn2} onClick={handleWhatsAppClick}><img src={whatsappIcon} alt="zapIcon" />FALAR COM UM ESPECIALISTA</button>
         </section>
 
 
