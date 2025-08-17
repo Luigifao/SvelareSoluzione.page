@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import styles from './Contato.module.css';
+import styles from './contato.module.css';
 import whatsappIcon from '/src/assets/img/whatsappIcon.png';
 
 
