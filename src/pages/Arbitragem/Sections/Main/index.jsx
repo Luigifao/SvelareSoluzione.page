@@ -18,7 +18,7 @@ function Main() {
     
     return (
         <main className={styles.mainPage}>
-            <div className={styles.container}>
+            <div className={styles.container}data-aos="fade-right">
                 <h1> ARBITRAGEM: A CHAVE PARA EMPRESÁRIOS QUE QUEREM PROTEGER, AGILIZAR E VALORIZAR SEUS NEGÓCIOS</h1>
                 <p>Transforme conflitos em soluções rápidas, sigilosas e sem burocracia — sem custo inicial.
                 </p>
@@ -27,7 +27,7 @@ function Main() {
                 </p>
             </div>
             <div className={styles.imgContainer}>
-            <img src={direito} alt="" />
+            <img src={direito} alt="" data-aos="fade-left"></img>
             </div>
         </main>
 

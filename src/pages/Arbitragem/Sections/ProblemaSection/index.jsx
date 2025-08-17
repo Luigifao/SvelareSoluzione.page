@@ -17,7 +17,7 @@ function ProblemaSection() {
 
     return (
         <section className={styles.container}>
-            <div className={styles.content}>
+            <div className={styles.content} data-aos="fade-right">
                 <div className={styles.text}>
                 <p>Essa é a realidade da arbitragem — e empresas inteligentes já estão se beneficiando dela para crescer com segurança e destaque no mercado.
                 </p>
