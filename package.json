@@ -33,7 +33,7 @@
     "globals": "^16.0.0",
     "vite": "^6.3.5"
   },
-  "engines":{
+  "engines": {
     "node": ">=20.0.0"
   }
 }
