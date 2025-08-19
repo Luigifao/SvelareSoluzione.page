@@ -169,6 +169,8 @@
 }
 
 @media (max-width: 768px) {
+
+  
     .buttons {
         gap: 15px;
     }
