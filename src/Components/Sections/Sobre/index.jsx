@@ -26,7 +26,7 @@ function Sobre() {
                 <div className={styles.subInfo} data-aos="fade-right">
                     <h2>Somos a maior plataforma de arbitragem 100% digital do Brasil</h2>
                     <div className={styles.line}></div>
-                    <p><h3 className={styles.destque}>Henrique de Oliveira e Silva</h3> <br /> Sou empresário com atuação voltada à Arbitragem e à mediação de controvérsias, com ampla experiência em negociações e na resolução extrajudicial de litígios. Acredito que a maioria dos conflitos contemporâneos pode ser solucionada de forma célere, eficaz e menos onerosa, sem a necessidade de recorrer ao moroso e burocrático sistema judicial.
+                    <p><h3 className={styles.destque}>Diretor e fundador: Henrique de Oliveira e Silva</h3> <br /> Sou empresário com atuação voltada à Arbitragem e à mediação de controvérsias, com ampla experiência em negociações e na resolução extrajudicial de litígios. Acredito que a maioria dos conflitos contemporâneos pode ser solucionada de forma célere, eficaz e menos onerosa, sem a necessidade de recorrer ao moroso e burocrático sistema judicial.
                         <br /> <br />Foi com essa convicção que fundei a Svelare, uma câmara arbitral comprometida com a democratização do acesso à Justiça e com a promoção de soluções práticas, sigilosas e descomplicadas para empresas e particulares. Nossa missão é oferecer um ambiente seguro, imparcial e acessível para que as partes envolvidas encontrem, com autonomia e responsabilidade, a melhor solução para seus impasses.</p><br /><br />
 
                     <h1>Por que optar pela Arbitragem em vez do Judiciário</h1>

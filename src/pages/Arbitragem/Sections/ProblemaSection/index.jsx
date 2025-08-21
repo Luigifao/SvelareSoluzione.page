@@ -24,7 +24,7 @@ function ProblemaSection() {
                 </div>
                 <div className={styles.title}>
                     <img src={warning} alt="" />
-                    <h1>O PROBLEMA QUE VOCE DEVE EVITAR</h1>
+                    <h1>O PROBLEMA QUE VOCÊ DEVE EVITAR</h1>
                 </div>
                 <div className={styles.description}>
                     <p>Todo empresário sabe: assinar um contrato é facil. <br /> Dificil é resolver um conflito quando ele aparece.</p>

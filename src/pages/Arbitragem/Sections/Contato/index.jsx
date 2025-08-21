@@ -16,7 +16,7 @@ function ContatoSection() {
     }, []);
 
     const handleWhatsAppClick = () => {
-        const phoneNumber = "+553196051534"; 
+        const phoneNumber = "+5531984502810"; 
         const message = "Olá! Gostaria de blindar meus contratos com arbitragem ";
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');

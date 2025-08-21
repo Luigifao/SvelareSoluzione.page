@@ -278,10 +278,10 @@ export default function GuiaInventario() {
                 <td>Online ou presenciais</td>
               </tr>
               <tr>
-                <td>Custos com advogado</td>
+                <td>Custos</td>
                 <td>Até 20% do valor</td>
                 <td>Em média 10%</td>
-                <td>Fixo em 6%</td>
+                <td>Facultativo: <br/>Fixo em 6%</td>
               </tr>
               <tr>
                 <td>Taxas e encargos</td>

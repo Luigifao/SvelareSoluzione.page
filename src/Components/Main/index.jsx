@@ -21,7 +21,7 @@ function Main() {
 
     const handleContactClick = () => {
         // Redirecionar para WhatsApp
-        const phoneNumber = "+553196051534"; 
+        const phoneNumber = "+5531984502810"; 
         const message = "Olá! Gostaria de entrar em contato com a Svelare para saber mais sobre os serviços de arbitragem.";
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');

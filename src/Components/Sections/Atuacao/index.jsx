@@ -44,7 +44,7 @@ function Atuacao() {
 
     const handleWhatsAppClick = () => {
         // Redirecionar para WhatsApp
-        const phoneNumber = "+55319605-1534"; // Substitua pelo número real
+        const phoneNumber = "+5531984502810"; 
         const message = "Olá! Gostaria de falar com um especialista da Svelare sobre os serviços de atuação (Extrajudicial, Arbitragem e Mediação).";
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
@@ -96,7 +96,7 @@ function Atuacao() {
                     <img src={setaIcon} alt="setaIcon" />
                 </div>
                 <div className={styles.infoCard}>
-                    <h1>ARBRITAGEM</h1>
+                    <h1>ARBITRAGEM</h1>
                     <div className={`${styles.textCard} ${isLarge1 ? styles.contentOn1 : ''}`}>
                         <p>• Definição: Método de resolução de conflitos em que as partes escolhem um ou mais árbitros, que atuam como juízes privados para decidir a questão. <br /> <br />• Exemplos de Aplicação: Disputas comerciais, contratos complexos, questões societárias. <br /> <br /> Vantagens: Decisões finais e vinculantes, especialização dos árbitros no assunto em disputa, confidencialidade.</p>
                     </div>

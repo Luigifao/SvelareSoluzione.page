@@ -38,7 +38,7 @@ export default function GuiaDivorcio() {
                         data-aos-duration="1000"
                         data-aos-delay="800"
                     >
-                        INVENTÁRIO EXTRAJUDICIAL POR ARBITRAGEM
+                        DIVÓRCIO EXTRAJUDICIAL POR ARBITRAGEM
                     </h2>
                 </header>
 
@@ -255,7 +255,7 @@ export default function GuiaDivorcio() {
             <td className={styles.destaque}>Online ou presenciais</td>
           </tr>
           <tr>
-            <td>Custos com advogado</td>
+            <td>Custos</td>
             <td>Até 20% do valor</td>
             <td>Em média 10%</td>
             <td className={styles.destaque}>Facultativo<br/>Fixo em 6%</td>
