@@ -165,7 +165,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-shadow: 0px 0px 20px #B79E5F;
+    
 
 }
 
@@ -176,7 +176,7 @@
     font-weight: 600;
     line-height: normal;
     color: white;
-    text-shadow: 0px 0px 20px #FFF;
+    
 
 }
 
@@ -327,7 +327,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        text-shadow: 0px 0px 20px #B79E5F;
+        
 
     }
 
@@ -338,7 +338,7 @@
         font-weight: 600;
         line-height: normal;
         color: white;
-        text-shadow: 0px 0px 20px #FFF;
+        
 
     }
 
@@ -485,7 +485,7 @@
 
     .carrouselWrapper {
         display: flex;
-        animation: scroll 14s linear infinite;
+        animation: scroll 19s linear infinite;
         /* Define a animação contínua */
     }
 
@@ -681,7 +681,7 @@
 
     .carrouselWrapper {
         display: flex;
-        animation: scroll 14s linear infinite;
+        animation: scroll 1444s linear infinite;
         /* Define a animação contínua */
     }
 
