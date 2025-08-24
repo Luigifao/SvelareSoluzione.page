@@ -46,17 +46,10 @@ function Header() {
                 </div>
                 <nav className={styles.navbarLateral}>
                     <ul className={styles.navbar2}>
-                        <li><a href="#atuacao">ATUAÇÃO</a></li>
-                        <li><a href="#saiba">SAIBA MAIS</a></li>
-                        <li><a href="#sobre">SOBRE</a></li>
-                        <li><a href="#parceiros">PARCEIROS</a></li>
-                        <li><a href="#contato">FALE CONOSCO</a></li>
-
-                        <li><Link to="/guia-divorcio">Divorcio</Link></li>
-
-                        <li><Link to="/guia-inventario">INVENTARIO</Link></li>
+                        <li><Link to="/">INÍCIO</Link></li>
+                        <li><Link to="/guia-divorcio">DIVÓRCIO</Link></li>
+                        <li><Link to="/guia-inventario">INVENTÁRIO</Link></li>
                         <li><Link to="/arbitragem">ARBITRAGEM</Link></li>
-
                     </ul>
                 </nav>
             </div>
@@ -68,20 +61,10 @@ function Header() {
             </div>
             <nav className={isSticky ? 'sticky' : ''}>
                 <ul className={styles.navbar}>
-                    <li><a href="#atuacao">ATUAÇÃO</a></li>
-                    <li><a href="#saiba">SAIBA MAIS</a></li>
-                    <li><a href="#sobre">SOBRE</a></li>
-                    <li><a href="#parceiros">PARCEIROS</a></li>
-                    <li><a href="#contato">FALE CONOSCO</a></li>
-                    <li className={styles.dropdown}>
-                        <button className={styles.dropdownBtn}>SERVIÇOS ▾</button>
-                        <ul className={styles.dropdownMenu}>
-                            <li><Link to="/guia-divorcio">DIVÓRCIO</Link></li>
-                            <li><Link to="/guia-inventario">INVENTÁRIO</Link></li>
-                            <li><Link to="/arbitragem">ARBITRAGEM</Link></li>
-                        </ul>
-                    </li>
-
+                    <li><Link to="/">INÍCIO</Link></li>
+                    <li><Link to="/guia-divorcio">DIVÓRCIO</Link></li>
+                    <li><Link to="/guia-inventario">INVENTÁRIO</Link></li>
+                    <li><Link to="/arbitragem">ARBITRAGEM</Link></li>
                 </ul>
             </nav>
         </header>

@@ -43,83 +43,31 @@
 .navbar li{
      padding: 20px;
 }
-.dropdown {
-  position: relative;
-}
-
-.dropdownBtn {
-  background: none;
-  border: none;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.dropdownBtn:hover {
-  color: #B79E5F;
-}
-
-.dropdownMenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: rgba(17, 17, 17, 0.95);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  min-width: 160px;
-  z-index: 1000;
-  border: 1px solid #333;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.dropdownMenu li {
-  overflow: hidden;
-}
-
-.dropdownMenu li a {
-  display: block;
-  padding: 12px 16px;
-  color: white;
+.navbar a {
   text-decoration: none;
-  transition: all 0.3s ease;
+  color: white;
+  transition: color 0.3s ease;
   position: relative;
 }
 
-.dropdownMenu li a::before {
+.navbar a::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(183, 158, 95, 0.2), transparent);
-  transition: left 0.5s;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #B79E5F;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
 
-.dropdownMenu li a:hover::before {
-  left: 100%;
-}
-
-.dropdownMenu li a:hover {
-  background-color: rgba(183, 158, 95, 0.1);
+.navbar a:hover {
   color: #B79E5F;
-  transform: translateX(5px);
 }
 
-.dropdown:hover .dropdownMenu {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+.navbar a:hover::after {
+  width: 100%;
 }
 
 
@@ -156,280 +104,198 @@
 
 }
 
-/*moible*/
+/*mobile*/
 
 @media screen and (max-width: 768px) {
-
     .header {
-
-        border-radius: 0px 0px 0px 0px;
-
-
-
+        border-radius: 0;
+        background: rgba(0, 0, 0, 0.95);
     }
 
     .sticky {
         position: fixed;
         top: 0;
-
-
-
-
     }
 
     .fechar {
-        margin-left: 80%;
-        margin-top: 20px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
 
+    .fechar:hover {
+        transform: rotate(90deg);
+    }
 
+    .fechar img {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) invert(1);
     }
 
     .navFechar {
         display: none;
-        animation: slideOut 0.4s forwards;
-
-
+        animation: slideOut 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
 
     .navbar {
         display: none;
-
     }
 
     .logo {
         margin-top: 15px;
         z-index: 0;
-
     }
 
     .container {
-
-        position: absolute;
+        position: fixed;
         display: none;
         margin: 0;
-        width: 380px;
-        height: 1000px;
-        flex-shrink: 0;
-        border-radius: 0px 0px 35px 0px;
-        opacity: 0.95;
-        background: #000;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.97), rgba(27, 27, 27, 0.97));
         backdrop-filter: blur(10px);
         z-index: 9999;
-        transition: left 0.4s ease
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .menuAberto {
-
         display: block;
-        animation: slideIn 0.4s forwards;
-
-
-
-
+        animation: slideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
 
     @keyframes slideIn {
         from {
-            left: -380px;
-            /* Começa fora da tela */
+            opacity: 0;
+            transform: translateX(-100%);
         }
-
         to {
-            left: 0;
-            /* Termina na posição visível */
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 
     @keyframes slideOut {
         from {
-            left: 0;
-            /* Começa na posição visível */
-
+            opacity: 1;
+            transform: translateX(0);
         }
-
         to {
-            left: -380px;
-            /* Termina fora da tela */
-
+            opacity: 0;
+            transform: translateX(-100%);
         }
     }
 
     .menu {
-        display: block;
-        margin: 0;
-        margin-left: 80%;
-
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: 20px;
+        cursor: pointer;
     }
 
     .menu img {
-        display: flex;
-        width: 64px;
-        height: 100px;
-        z-index: 0;
-
-
-
+        width: 32px;
+        height: 32px;
+        transition: transform 0.3s ease;
     }
 
-
-
-    .logo2 {
-        width: 100%;
-        margin: 0;
-
+    .menu:hover img {
+        transform: scale(1.1);
     }
 
     .navbarLateral {
         display: flex;
         flex-direction: column;
-        margin-left: 5%;
-        margin-top: 10%;
-
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 0 20px;
     }
 
     .navbarLateral ul {
-        text-align: left;
+        text-align: center;
         list-style: none;
+        padding: 0;
+        width: 100%;
     }
 
     .navbarLateral li {
-        margin: 40px;
-        margin-left: 20%;
+        margin: 20px 0;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.5s forwards;
+        animation-delay: calc(0.1s * var(--item-index));
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .navbarLateral a {
+        display: inline-block;
         text-decoration: none;
         color: #FFF;
         font-family: Poppins;
-        font-size: 20px;
-        font-style: normal;
+        font-size: 24px;
         font-weight: 500;
-        line-height: normal;
-
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        position: relative;
     }
 
+    .navbarLateral a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        background-color: #B79E5F;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
 
+    .navbarLateral a:hover {
+        color: #B79E5F;
+        transform: translateY(-2px);
+    }
+
+    .navbarLateral a:hover::after {
+        width: 80%;
+    }
 }
 
+
+
+
 @media (max-width: 425px) {
-
-    .header {
-
-        border-radius: 0px 0px 0px 0px;
-        position: relative;
-
-
-    }
-
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-
-
-    }
-
-    .fechar {
-        margin-left: 80%;
-        margin-top: 20px;
-
-    }
-
-    .navFechar {
-        display: none;
-
-    }
-
-    .navbar {
-        display: none;
-
-    }
-
-    .logo {
-        margin-top: 10px;
-
-    }
-
     .logo img {
         width: 70px;
         height: auto;
     }
 
-    .container {
-
-        position: absolute;
-        transition: all 0.3 ease-in-out;
-        display: none;
-        margin: 0;
-        width: 220px;
-        height: 1000px;
-        flex-shrink: 0;
-        border-radius: 0px 0px 35px 0px;
-        opacity: 0.95;
-        background: #000;
-        backdrop-filter: blur(10px);
-        z-index: 1;
-
-    }
-
-    .menuAberto {
-
-        display: block;
-
-
-    }
-
-    .menu {
-        display: block;
-        margin: 0;
-        margin-left: 60%;
-
-
-    }
-
     .menu img {
-        display: flex;
-        width: 60px;
-        height: 80px;
-    }
-
-
-
-    .logo2 {
-        width: 100%;
-        margin: 0;
-
-    }
-
-    .navbarLateral {
-        display: flex;
-        flex-direction: column;
-        margin-left: 5%;
-        margin-top: 10%;
-
-    }
-
-    .navbarLateral ul {
-        text-align: left;
-        list-style: none;
-    }
-
-    .navbarLateral li {
-        margin: 40px;
-        margin-left: 20%;
+        width: 28px;
+        height: 28px;
     }
 
     .navbarLateral a {
-        text-decoration: none;
-        color: #FFF;
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-
+        font-size: 20px;
+        padding: 8px 16px;
     }
 
-
+    .fechar img {
+        width: 20px;
+        height: 20px;
+    }
 }
+
+
