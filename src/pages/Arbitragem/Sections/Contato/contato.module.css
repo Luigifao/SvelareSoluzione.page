@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'animate.css';
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: #FAF6F6;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.title h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 58px;
+    color: #B79E5F;
+    margin-bottom: 50px;
+}
+
+.callToAction h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #B79E5F;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.callToAction p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.contactInfo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 35px;
+    color: #B79E5F;
+    margin-bottom: 20px;
+}
+
+.contactInfo p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contractText {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #B79E5F;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.whatsappButton {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 350px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: #FFFFFF;
+}
+
+.whatsappButton:hover {
+    background: linear-gradient(135deg, #128C7E, #075E54);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsappButton img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 1366px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .title h1 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .callToAction h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .callToAction p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .contactInfo h3 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .contactInfo p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .contractText {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+
+    .whatsappButton {
+        font-size: 16px;
+        padding: 12px 25px;
+        min-width: 300px;
+    }
+
+    .whatsappButton img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+  
+    .buttons {
+        gap: 15px;
+    }
+
+    .contractText {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+
+    .whatsappButton {
+        font-size: 14px;
+        padding: 10px 20px;
+        min-width: 280px;
+    }
+
+    .callToAction h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .contactInfo h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

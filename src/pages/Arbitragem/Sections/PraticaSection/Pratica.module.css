@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'animate.css';
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+.content {
+    padding-top: 5%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.title h1 {
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 58px;
+    color: #B79E5F;
+    margin-bottom: 40px;
+    margin-left: 10%;
+}
+.description {
+    width: 60%;
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+
+
+/* From Uiverse.io by barisdogansutcu */ 
+.downloadButton {
+  position: relative;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.downloadButton .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #242a35;
+  border: solid 1px #e8e8e82d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.downloadButton:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #B79E5F;
+  border: solid 1px #0000002d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.downloadButton:hover .download {
+  transform: translateY(100%);
+}
+
+.download svg polyline,
+.download svg line {
+  animation: docs 1s infinite;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+@media (max-width:425px) {
+
+    .parceiros {
+        width: 100%;
+        height: 641px;
+        flex-shrink: 0;
+        background: #FFF;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-top: 70px;
+    }
+
+    .imgParceiros {
+        display: flex;
+    }
+
+    .imgParceiros h1 {
+        color: #B79E5F;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding: 20px;
+    }
+
+    .imgParceiros img {
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+
+    }
+
+    .subtitle h2 {
+        width: 200px;
+        color: #000;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+    }
+
+    .line {
+        width: 100px;
+        height: 0.399px;
+        transform: rotate(0.202deg);
+        flex-shrink: 0;
+        fill: #000;
+        stroke-width: 3px;
+        background-color: #B79E5F;
+    }
+
+
+
+
+}
+
+.downloads{
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+    margin-top: 2%;
+
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    height: 50vh;
+    background: black;
+}
+.content {
+    padding-top: 5%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.title h1 {
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 40px;
+    color: #B79E5F;
+    margin-bottom: 40px;
+    margin-left: 10%;
+}
+.description {
+    width: 60%;
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+
+
+/* From Uiverse.io by barisdogansutcu */ 
+.downloadButton {
+  position: relative;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.downloadButton .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #242a35;
+  border: solid 1px #e8e8e82d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.downloadButton:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #B79E5F;
+  border: solid 1px #0000002d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.downloadButton:hover .download {
+  transform: translateY(100%);
+}
+
+.download svg polyline,
+.download svg line {
+  animation: docs 1s infinite;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+@media (max-width:425px) {
+
+    .parceiros {
+        width: 100%;
+        height: 641px;
+        flex-shrink: 0;
+        background: #FFF;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-top: 70px;
+    }
+
+    .imgParceiros {
+        display: flex;
+    }
+
+    .imgParceiros h1 {
+        color: #B79E5F;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding: 20px;
+    }
+
+    .imgParceiros img {
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+
+    }
+
+    .subtitle h2 {
+        width: 200px;
+        color: #000;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+    }
+
+    .line {
+        width: 100px;
+        height: 0.399px;
+        transform: rotate(0.202deg);
+        flex-shrink: 0;
+        fill: #000;
+        stroke-width: 3px;
+        background-color: #B79E5F;
+    }
+
+
+
+
+}
+
+.downloads{
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+    margin-top: 2%;
+
+}
+}
+
+@media (max-width:768px) {
+
+  .container {
+    width: 100%;
+    height: auto;
+
+  }
+
+  .description p{
+    display: block;
+
+  }
+
+}
+@media (max-width:425px) {
+
+    .description p{
+      width: 100%;
+    }
+    .description{
+      width: 90%;
+    }
+}

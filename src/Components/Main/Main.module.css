@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'animate.css';
+
+.mainPage {
+    background-image: url(../../assets/img/backgroundMain.png);
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    margin-top: -80px;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+
+}
+
+/*
+
+* {
+    outline: 1px solid red;
+}
+*/
+
+.logoMain {
+
+
+    width: 40%;
+    height: auto;
+
+}
+
+.logoMain img {
+
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
+
+}
+
+.mainPage p {
+
+
+    width: 246px;
+    height: auto;
+    text-align: left;
+    color: white;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.mainPage h1 {
+    width: 900px;
+    text-align: left;
+
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
+
+.text {
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.text h1 {
+    margin-top: 20px;
+
+}
+
+.text p {
+    margin-top: 50px;
+
+}
+
+
+.text button {
+    width: 415px;
+    height: 61px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
+    margin-top: 40px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text button:hover {
+    color: #B79E5F;
+    background-color: black;
+    transition: 0.2s ease-in-out;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.carrousel {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    position: absolute;
+    top: 107%;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    background: #1E2126;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    /* Esconde os itens fora da área visível */
+}
+
+.carrouselWrapper {
+    display: flex;
+    animation: scroll 14s linear infinite;
+    /* Define a animação contínua */
+}
+
+.carrouselItem {
+    flex: 0 0 33.333%;
+    /* Cada item ocupa 1/3 do espaço visível */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+        /* Começa na posição inicial */
+    }
+
+    to {
+        transform: translateX(-100%);
+        /* Move os itens para fora à esquerda */
+    }
+}
+
+.carrousel h1 {
+    color: #B79E5F;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+
+}
+
+.carrousel h2 {
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: white;
+    
+
+}
+
+@media (max-width: 1366px) {
+
+    .mainPage {
+        background-image: url(../../assets/img/backgroundMain.png);
+        width: 100%;
+        height: 110vh;
+        background-size: cover;
+        margin-top: -80px;
+
+    }
+
+    .logoMain {
+        width: 300px;
+        height: 300px;
+        display: flex;
+    }
+
+    .mainPage p {
+        width: 246px;
+        text-align: left;
+        display: flex;
+        color: white;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .mainPage h1 {
+        width: 529px;
+        text-align: left;
+        display: flex;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        margin-left: 10%;
+        
+        
+
+    }
+
+    .text {
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+     
+
+    }
+    .logomain img {
+        width: 50px;
+        height: 50px;
+       
+    }
+
+    
+    
+
+
+    .text button {
+        width: 315px;
+        height: 61px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
+        margin-top: 10px;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .text button:hover {
+        color: #B79E5F;
+        background-color: black;
+        transition: 0.2s ease-in-out;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+    }
+
+    .carrousel {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        position: absolute;
+        top: 103%;
+        left: 50%;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        backdrop-filter: blur(10px);
+        background: #1E2126;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow-x: hidden;
+        /* Esconde os itens fora da área visível */
+    }
+
+    .carrouselWrapper {
+        display: flex;
+        animation: scroll 14s linear infinite;
+        /* Define a animação contínua */
+    }
+
+    .carrouselItem {
+        flex: 0 0 33.333%;
+        /* Cada item ocupa 1/3 do espaço visível */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+            /* Começa na posição inicial */
+        }
+
+        to {
+            transform: translateX(-100%);
+            /* Move os itens para fora à esquerda */
+        }
+    }
+
+    .carrousel h1 {
+        color: #B79E5F;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        
+
+    }
+
+    .carrousel h2 {
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: white;
+        
+
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .mainPage {
+        background-image: url(../../assets/img/backgroundMain.png);
+        width: 100%;
+        height: 110vh;
+        background-size: cover;
+        margin-top: -80px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .logoMain img{
+        width: 200px;
+        height: 200px;
+       
+
+    }
+    .logoMain{
+
+        width: 100%;
+        height: auto;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+   
+
+    .mainPage h1 {
+
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+
+    }
+
+    .text{
+        width: 100%;
+        height: auto;
+        align-items: center;
+
+    }
+
+    .text h1 {
+
+        width: 100%;
+        max-width: 450px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4;
+        text-align: center;
+       
+
+    }
+
+    .text p {
+        width: 100%;
+        max-width: 350px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.3;
+        text-align: center;
+        justify-content: center;
+       
+
+
+
+    }
+
+
+    .text button {
+        width: 315px;
+        height: 41px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
+        margin-top: 40px;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+
+    }
+
+    .text button:hover {
+        color: #B79E5F;
+        background-color: black;
+        transition: 0.2s ease-in-out;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    .carrousel {
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 93%;
+        left: 50%;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.473);
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow-x: hidden;
+        /* Esconde os itens fora da área visível */
+    }
+
+    .carrouselWrapper {
+        display: flex;
+        animation: scroll 19s linear infinite;
+        /* Define a animação contínua */
+    }
+
+    .carrouselItem {
+        flex: 0 0 33.333%;
+        /* Cada item ocupa 1/3 do espaço visível */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+            /* Começa na posição inicial */
+        }
+
+        to {
+            transform: translateX(-100%);
+            /* Move os itens para fora à esquerda */
+        }
+    }
+
+    .carrousel h1 {
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-shadow: 0px 0px 20px #FFF;
+
+    }
+
+    .carrousel h2 {
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: white;
+        text-shadow: 0px 0px 20px #FFF;
+
+    }
+
+
+
+
+}
+
+
+@media (max-width: 425px) {
+
+
+    .mainPage {
+        background-image: url(../../assets/img/backgroundMain.png);
+        width: 100%;
+        height: 110vh;
+        background-size: cover;
+        background-position: center top;
+        margin-top: -80px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .logoMain {
+        display: flex;
+        flex-direction: column;
+        margin: O auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 200px;
+        height: 200px;
+        margin-left: 1%;
+
+
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        padding-top: 30%;
+
+    }
+
+    .logoMain img {
+        width: 200px;
+        height: 200px;
+       
+    
+    }
+
+    .mainPage p {
+        width: 130px;
+        color: white;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text h1 {
+
+        
+        width: 280px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+
+
+    }
+
+    .text p {
+
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: center;
+      
+       
+
+
+
+
+    }
+
+
+    .text button {
+        width: 215px;
+        height: 61px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
+        margin-top: 40px;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+
+    }
+
+    .text button:hover {
+        color: #B79E5F;
+        background-color: black;
+        transition: 0.2s ease-in-out;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    .carrousel {
+        display: none;
+        width: 100%;
+        height: 15vh;
+        position: absolute;
+        top: 93%;
+        left: 50%;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.473);
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow-x: hidden;
+        /* Esconde os itens fora da área visível */
+    }
+
+    .carrouselWrapper {
+        display: flex;
+        animation: scroll 1444s linear infinite;
+        /* Define a animação contínua */
+    }
+
+    .carrouselItem {
+        flex: 0 0 33.333%;
+        /* Cada item ocupa 1/3 do espaço visível */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+            /* Começa na posição inicial */
+        }
+
+        to {
+            transform: translateX(-100%);
+            /* Move os itens para fora à esquerda */
+        }
+    }
+
+    .carrousel h1 {
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-shadow: 0px 0px 20px #FFF;
+
+    }
+
+    .carrousel h2 {
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: white;
+        text-shadow: 0px 0px 20px #FFF;
+
+    }
+
+
+
+}
+
+@media (max-width: 320px) {
+
+    .logoMain {
+        display: flex;
+        flex-direction: column;
+        margin: O auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 200px;
+        height: 200px;
+     
+
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .logoMain img {
+        width: 200px;
+        height: 200px;
+     
+    }
+
+    .mainPage p {
+        width: 130px;
+        display: flex;
+        color: white;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text h1 {
+
+     
+        width: 280px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        
+
+    }
+
+    .text p {
+        
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: center;
+        
+       
+
+
+
+    }
+
+
+    .text button {
+        width: 215px;
+        height: 61px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
+        margin-top: 40px;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+       
+    }
+
+
+}

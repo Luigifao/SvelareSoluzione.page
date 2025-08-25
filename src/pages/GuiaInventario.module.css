@@ -1,0 +1,754 @@
+
+/* Estilos baseados no PDF da Svelare - Versão Responsiva */
+:root {
+  --primary-gold: #B79E5F;
+  --gold-hover: #d4b76a;
+  --text-light: #f8f9fa;
+  --text-secondary: #e9ecef;
+  --border-color: #495057;
+  --bg-dark: #000000;
+  --bg-card: #1a1a1a;
+  --bg-section: #2c2c2c;
+  --shadow-light: rgba(183, 158, 95, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILOS BASE PARA DESKTOP */
+.container {
+  font-family: Poppins, sans-serif;
+  color: var(--text-light);
+  line-height: 1.6;
+  background: var(--bg-dark);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* Garantir que apenas esta página tenha fundo escuro */
+.container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-dark);
+  z-index: -1;
+}
+
+/* Layout Desktop */
+@media (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    box-shadow: 0 0 30px var(--shadow-dark);
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Hero Section - Cabeçalho principal */
+.hero {
+  text-align: center;
+  padding: 40px 0 50px;
+  border-bottom: 3px solid var(--primary-gold);
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-section) 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px var(--shadow-dark);
+}
+
+/* Desktop Hero */
+@media (min-width: 769px) {
+  .hero {
+    padding: 60px 40px 70px;
+    margin-bottom: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-gold);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px var(--shadow-dark);
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+    margin-bottom: 0;
+    opacity: 0.9;
+  }
+}
+
+/* Mobile Hero */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .hero {
+    padding: 30px 20px 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-gold);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  
+  .hero h2 {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+}
+
+/* Sections */
+.container section {
+  margin-bottom: 40px;
+  padding: 30px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-dark);
+  border-left: 5px solid var(--primary-gold);
+ 
+ 
+}
+
+
+
+/* Desktop Sections */
+@media (min-width: 769px) {
+  .container section {
+    
+    margin-bottom: 50px;
+    padding: 40px;
+  }
+  
+  .container h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-gold);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    border-left: 4px solid var(--primary-gold);
+    position: relative;
+  }
+  
+  .container h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    width: 60px;
+    height: 2px;
+    background: var(--primary-gold);
+  }
+}
+
+/* Mobile Sections */
+@media (max-width: 768px) {
+  .container section {
+    margin-bottom: 25px;
+    padding: 20px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+  
+  .container h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-gold);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-left: 4px solid var(--primary-gold);
+    padding-left: 15px;
+  }
+}
+
+.container section p {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  z-index: 1;
+  display: block;
+
+  
+}
+
+
+
+/* Desktop paragraph styling */
+@media (min-width: 769px) {
+  .container section p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+  }
+}
+
+/* Boxes para leis - Estilo caixas destacadas */
+.boxes {
+  display: grid;
+  gap: 25px;
+  margin: 40px 0;
+
+}
+
+/* Desktop Boxes */
+@media (min-width: 769px) {
+  .boxes {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 50px 0;
+  }
+}
+
+/* Mobile Boxes */
+@media (max-width: 768px) {
+  .boxes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 30px 0;
+  }
+
+  .boxes p{
+  display: block;
+
+  }
+}
+
+.lawBox,
+.arbBox {
+  border: 2px solid var(--primary-gold);
+  padding: 25px;
+  background: linear-gradient(145deg, var(--bg-section) 0%, var(--bg-card) 100%);
+  border-radius: 12px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px var(--shadow-dark);
+}
+
+/* Desktop Box Effects */
+@media (min-width: 769px) {
+  .lawBox:hover,
+  .arbBox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow-light);
+  }
+  
+  .lawBox,
+  .arbBox {
+    padding: 30px;
+  }
+}
+
+.lawBox::before,
+.arbBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-gold) 0%, var(--gold-hover) 100%);
+  border-radius: 12px 12px 0 0;
+}
+
+.lawBox h4,
+.arbBox h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-gold);
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lawBox p,
+.arbBox p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Desktop Box Text */
+@media (min-width: 769px) {
+  .lawBox h4,
+  .arbBox h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .lawBox p,
+  .arbBox p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+}
+
+/* Checklist - Lista de requisitos */
+.checklist {
+  list-style: none;
+  margin-left: 0;
+  background: var(--bg-section);
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 5px solid var(--primary-gold);
+}
+
+/* Desktop Checklist */
+@media (min-width: 769px) {
+  .checklist {
+    padding: 35px;
+  }
+}
+
+.checklist > li {
+  margin-bottom: 20px;
+  padding-left: 35px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Desktop Checklist Items */
+@media (min-width: 769px) {
+  .checklist > li {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    padding-left: 40px;
+  }
+}
+
+.checklist > li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-gold);
+  font-weight: bold;
+  font-size: 1.4rem;
+  background: var(--bg-card);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary-gold);
+}
+
+/* Desktop Checkmarks */
+@media (min-width: 769px) {
+  .checklist > li::before {
+    font-size: 1.6rem;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.checklist li ul {
+  list-style: disc;
+  margin-left: 25px;
+  margin-top: 12px;
+  background: var(--bg-card);
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+/* Desktop Nested Lists */
+@media (min-width: 769px) {
+  .checklist li ul {
+    margin-left: 30px;
+    padding: 20px 25px;
+  }
+}
+
+.checklist li ul li {
+  margin-bottom: 8px;
+  padding-left: 0;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+/* Desktop Nested Items */
+@media (min-width: 769px) {
+  .checklist li ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+}
+
+.checklist li ul li::before {
+  display: none;
+}
+
+.checklist strong {
+  color: var(--primary-gold);
+  font-weight: bold;
+}
+
+/* Two-column layout */
+.twoCols {
+  display: grid;
+  gap: 30px;
+  margin: 40px 0;
+  padding: 30px;
+  background: var(--bg-section);
+  border-radius: 12px;
+  border-left: 5px solid var(--primary-gold);
+  box-shadow: 0 4px 15px var(--shadow-dark);
+}
+
+/* Desktop Two Columns */
+@media (min-width: 769px) {
+  .twoCols {
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin: 50px 0;
+    padding: 40px;
+  }
+}
+
+/* Mobile Two Columns */
+@media (max-width: 768px) {
+  .twoCols {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 30px 0;
+    padding: 25px 20px;
+  }
+}
+
+.twoCols > div h3 {
+  border-left: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+/* Desktop Two Columns Headers */
+@media (min-width: 769px) {
+  .twoCols > div h3 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+  
+  .twoCols > div h3::after {
+    display: none;
+  }
+}
+
+.twoCols ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.twoCols ul li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  padding-left: 25px;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Desktop Two Columns Lists */
+@media (min-width: 769px) {
+  .twoCols ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    padding-left: 30px;
+  }
+}
+
+.twoCols ul li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: var(--primary-gold);
+  font-size: 0.8rem;
+}
+
+/* Table - Tabela comparativa */
+.tableWrapper {
+  overflow-x: auto;
+  margin: 40px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px var(--shadow-dark);
+  background: var(--bg-card);
+}
+
+/* Desktop Table */
+@media (min-width: 769px) {
+  .tableWrapper {
+    margin: 50px 0;
+  }
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  font-size: 0.9rem;
+}
+
+/* Desktop Table */
+@media (min-width: 769px) {
+  .container table {
+    font-size: 1rem;
+  }
+}
+
+.container th {
+  background: linear-gradient(135deg, var(--primary-gold) 0%, var(--gold-hover) 100%);
+  color: #000000;
+  padding: 18px 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--bg-dark);
+}
+
+/* Desktop Table Headers */
+@media (min-width: 769px) {
+  .container th {
+    padding: 20px 18px;
+    font-size: 1.1rem;
+  }
+}
+
+.container td {
+  padding: 15px 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: background-color 0.3s ease;
+}
+
+/* Desktop Table Cells */
+@media (min-width: 769px) {
+  .container td {
+    padding: 18px 15px;
+    font-size: 1rem;
+  }
+}
+
+.container tr:nth-child(even) {
+  background: var(--bg-section);
+}
+
+.container tr:hover {
+  background: var(--bg-section);
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+/* Desktop Table Hover Effects */
+@media (min-width: 769px) {
+  .container tr:hover {
+    box-shadow: 0 2px 8px var(--shadow-light);
+  }
+}
+
+/* Primeira coluna (Aspecto) com destaque */
+.container td:first-child {
+  background: var(--bg-section);
+  font-weight: bold;
+  text-align: left;
+  color: var(--primary-gold);
+  border-right: 2px solid var(--primary-gold);
+}
+
+/* Mobile Table Adjustments */
+@media (max-width: 768px) {
+  .container th, 
+  .container td {
+    padding: 12px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .container td:first-child {
+    font-size: 0.85rem;
+  }
+}
+
+/* Footer interno da página */
+.container footer {
+  margin-top: 50px;
+  padding: 35px 30px;
+  border-top: 3px solid var(--primary-gold);
+  text-align: center;
+  background: linear-gradient(145deg, var(--bg-section) 0%, var(--bg-card) 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-dark);
+}
+
+/* Desktop Footer */
+@media (min-width: 769px) {
+  .container footer {
+    margin-top: 60px;
+    padding: 45px 40px;
+  }
+}
+
+/* Mobile Footer */
+@media (max-width: 768px) {
+  .container footer {
+    margin-top: 40px;
+    padding: 25px 20px;
+  }
+}
+
+.container footer p {
+  margin-bottom: 18px;
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Desktop Footer Text */
+@media (min-width: 769px) {
+  .container footer p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+}
+
+.container footer p:last-child {
+  font-weight: bold;
+  color: var(--primary-gold);
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Desktop Footer Last Paragraph */
+@media (min-width: 769px) {
+  .container footer p:last-child {
+    font-size: 1.4rem;
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 10px;
+  }
+  
+  .hero {
+    padding: 20px 15px 30px;
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+  
+  .container section {
+    padding: 15px 12px;
+    margin-bottom: 20px;
+  }
+  
+  .container h3 {
+    font-size: 1.2rem;
+  }
+  
+  .lawBox,
+  .arbBox {
+    padding: 20px 15px;
+  }
+  
+  .twoCols {
+    padding: 20px 15px;
+  }
+  
+  .checklist {
+    padding: 20px 15px;
+  }
+  
+  .container footer {
+    padding: 20px 15px;
+    margin-top: 30px;
+  }
+  
+  .container footer p:last-child {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large Desktop Screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+    padding: 80px 60px;
+  }
+  
+  .hero {
+    padding: 80px 60px 90px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .container section {
+    padding: 50px;
+  }
+  
+  .container h3 {
+    font-size: 2rem;
+  }
+  
+  .container section p {
+    font-size: 1.2rem;
+  }
+}

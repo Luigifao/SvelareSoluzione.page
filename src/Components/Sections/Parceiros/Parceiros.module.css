@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.parceiros {
+    width: 100%;
+    min-height: 800px;
+    flex-shrink: 0;
+    background: #FFF;
+    padding-bottom: 3rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 70px;
+    padding: 0 1rem;
+}
+
+.imgParceiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imgParceiros h1 {
+    color: #B79E5F;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 20px;
+    text-align: center;
+}
+
+.imgParceiros img {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+
+}
+
+.subtitle h2 {
+    width: 534px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
+.line {
+    width: 100px;
+    height: 0.399px;
+    transform: rotate(0.202deg);
+    flex-shrink: 0;
+    fill: #000;
+    stroke-width: 3px;
+    background-color: #B79E5F;
+}
+
+/* From Uiverse.io by barisdogansutcu */ 
+.downloadButton {
+  position: relative;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.downloadButton .docs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #242a35;
+  border: solid 1px #e8e8e82d;
+  transition: all 0.3s ease;
+}
+
+.downloadButton:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #B79E5F;
+  border: solid 1px #0000002d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.downloadButton:hover .download {
+  transform: translateY(100%);
+}
+
+.download svg polyline,
+.download svg line {
+  animation: docs 1s infinite;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+@media (max-width:425px) {
+    .parceiros {
+        width: 100%;
+        min-height: 100vh;
+        flex-shrink: 0;
+        background: #FFF;
+        padding-bottom: 2rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 70px auto 0;
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    .imgParceiros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imgParceiros h1 {
+        color: #B79E5F;
+        font-family: Poppins;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding: 20px 10px;
+    }
+
+    .imgParceiros img {
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+    }
+
+    .subtitle h2 {
+        width: auto;
+        color: #000;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .line {
+        width: 100px;
+        height: 0.399px;
+        transform: rotate(0.202deg);
+        flex-shrink: 0;
+        fill: #000;
+        stroke-width: 3px;
+        background-color: #B79E5F;
+    }
+
+    .descriptionBox {
+        margin: 1rem auto;
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .description {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+}
+
+.downloads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.downloads ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.downloads li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    margin: 0;
+}
+
+.descriptionBox {
+  width: 100%;
+  max-width: 280px;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  border-left: 4px solid #B79E5F;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.descriptionBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(183, 158, 95, 0.05), transparent);
+  z-index: 0;
+}
+
+.descriptionBox:hover {
+  transform: translateY(-2px);
+  box-shadow: 8px 8px 35px rgba(0, 0, 0, 0.08);
+}
+
+.description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.92rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.description strong {
+  color: #B79E5F;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .downloads {
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .downloads li {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+    .parceiros h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+
+  .downloadButton {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .descriptionBox {
+    width: 100%;
+    max-width: 280px;
+    padding: 1.2rem;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .description {
+    font-size: 0.85rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .description strong {
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .downloads li {
+    max-width: 800px;
+  }
+}

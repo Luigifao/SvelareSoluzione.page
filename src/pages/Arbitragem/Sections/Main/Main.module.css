@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'animate.css';
+
+/*
+* {
+    outline: 1px solid red;
+}
+*/
+
+
+.mainPage{
+    margin-top: -80px;
+    width: 100%;
+    height: 105vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), /* cor no topo */
+        rgba(183, 131, 10, 0.53)  /* cor na base */
+    ),
+    url(../../../../assets/img/fundoSaibaMais.png);
+    background-size: cover;
+    display: flex;
+
+   
+}
+
+.container h1{
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 58px;
+    color: #B79E5F;
+    margin-bottom: 40px;
+} 
+.container p{
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.container{
+    width: 40%;
+    margin-left: 10%;
+    padding-top: 10%;
+}
+.imgContainer{
+    width: 40%;
+    height: 100%;
+    margin-left: 10%;
+   
+}
+.imgContainer img{
+    width: 160%;
+    height: 100%;
+    margin-left: -100%;
+   
+  
+}
+
+@media (max-width: 1440px){
+.imgContainer img{
+    width: 240%;
+    height: 100%;
+    margin-left: -140%;
+
+
+}
+
+
+}
+@media (max-width: 1366px){
+
+   
+    .container h1{
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 40px;
+    color: #B79E5F;
+    margin-bottom: 40px;
+} 
+.container p{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    
+}
+
+.imgContainer img{
+    width: 160%;
+    height: 100%;
+    margin-left: -90%;
+
+
+}
+}
+
+
+@media (max-width: 1024px){
+
+
+    .mainPage{
+        height: 90vh;
+
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        margin-left: 30%;
+        padding-top: 30%;
+        
+     
+    }
+   
+    .container h1{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 40px;
+    color: #B79E5F;
+} 
+.container p{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+
+.imgContainer img{
+   
+   
+
+    display: none;
+
+
+}
+}
+
+@media (max-width: 768px){
+
+
+
+    .mainPage{
+        height: 100vh;
+    }
+    .container p{
+        width: 100%;
+        display: block;
+       
+    }
+    .imgContainer{
+        display: none;
+    }
+
+    .container{
+        margin-left: 0%;
+      
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container p{
+        width: 60%;
+        font-size: 20px;
+        margin-left: 20%;
+    }
+    
+
+}
+@media (max-width: 425px){
+
+     .container h1{
+        text-align: left;
+    }
+
+     .container p{
+        width: 80%;
+        text-align: left;
+        margin-left: 0%;
+    }
+
+
+}

@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.contato {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background: #000;
+    display: flex;
+
+}
+
+.container {
+    margin-left: 10%;
+    margin-top: 70px;
+    padding-top: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    margin-left: 100%;
+    white-space: pre;
+}
+
+.logo img {
+    width: 200px;
+    height: 142px;
+    flex-shrink: 0;
+    aspect-ratio: 100/71;
+}
+
+.inputText {
+    color: rgba(0, 0, 0, 0.40);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
+.input {
+
+    width: 778px;
+    height: 82px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #D9D9D9;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+
+}
+
+.tituloContato {
+    display: flex;
+    align-items: center;
+}
+
+.tituloContato img {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+}
+
+.tituloContato h1 {
+    color: #B79E5F;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 20px;
+}
+
+
+.subtitle h2 {
+    width: 629px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
+.line {
+    width: 100px;
+    height: 0.399px;
+    transform: rotate(0.202deg);
+    flex-shrink: 0;
+    stroke-width: 3px;
+    background: #B79E5F;
+}
+
+.subtitle p {
+    width: 629px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 75px;
+    margin-bottom: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #B79E5F;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    justify-content: center;
+
+}
+
+.btn:hover {
+    background-color: black;
+    color: #B79E5F;
+    transition: 0.4s;
+
+}
+
+.formulario {
+    margin-top: 50px;
+    /* Ajuste conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formularioInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* Espaçamento uniforme entre os campos */
+    margin-top: 20px;
+    /* Ajustar altura entre o título e o formulário */
+    width: 100%;
+}
+
+.formulario h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    margin-left: 20%;
+
+
+
+}
+
+.formularioInfo {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+
+
+
+}
+
+textarea.input {
+    resize: vertical;
+    /* Permitir redimensionamento vertical */
+    min-height: 220px;
+    /* Altura mínima */
+
+}
+
+.btn2 {
+    display: flex;
+    flex-direction: column;
+    width: 778px;
+    height: 82px;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #B79E5F;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    justify-content: center;
+}
+
+.btn2:hover {
+    background-color: black;
+    color: #B79E5F;
+    transition: 0.4s;
+
+}
+
+@media (max-width: 1366px) {
+
+    .contato {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container {
+        margin-left: 10%;
+        margin-top: 70px;
+        padding-top: 50px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo h2 {
+        margin-left: 100%;
+        white-space: pre;
+    }
+
+    .logo img {
+        width: 200px;
+        height: 142px;
+        flex-shrink: 0;
+        aspect-ratio: 100/71;
+    }
+
+    .inputText {
+        color: rgba(0, 0, 0, 0.40);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+    }
+
+    .input {
+
+        width: 778px;
+        height: 62px;
+        ;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #D9D9D9;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+
+    }
+
+    .tituloContato {
+        display: flex;
+        align-items: center;
+    }
+
+    .tituloContato img {
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+    }
+
+    .tituloContato h1 {
+        color: #B79E5F;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding: 20px;
+    }
+
+
+    .subtitle h2 {
+        width: 629px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+    }
+
+    .line {
+        width: 100px;
+        height: 0.399px;
+        transform: rotate(0.202deg);
+        flex-shrink: 0;
+        stroke-width: 3px;
+        background: #B79E5F;
+    }
+
+    .subtitle p {
+        width: 629px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        width: 373px;
+        height: 75px;
+        margin-bottom: 30px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #B79E5F;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        justify-content: center;
+
+    }
+
+    .btn:hover {
+        background-color: black;
+        color: #B79E5F;
+        transition: 0.4s;
+
+    }
+
+    .formulario {
+        margin-top: 50px;
+        /* Ajuste conforme necessário */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10%;
+        justify-content: center;
+    }
+
+    .formularioInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        /* Espaçamento uniforme entre os campos */
+        margin-top: 20px;
+        /* Ajustar altura entre o título e o formulário */
+        width: 100%;
+    }
+
+    .formulario h2 {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 60px;
+        margin-left: 10%;
+        text-align: left;
+
+
+
+    }
+
+    .formularioInfo {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+
+
+
+    }
+
+    textarea.input {
+        resize: vertical;
+        /* Permitir redimensionamento vertical */
+        min-height: 220px;
+        /* Altura mínima */
+
+    }
+
+    .btn2 {
+        display: flex;
+        flex-direction: column;
+        width: 778px;
+        height: 82px;
+        flex-shrink: 0;
+        margin-bottom: 30px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #B79E5F;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        justify-content: center;
+    }
+
+    .btn2:hover {
+        background-color: black;
+        color: #B79E5F;
+        transition: 0.4s;
+
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .contato {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        justify-content: center;
+        align-content: center;
+        padding-top: 50px;
+    }
+
+    .tituloContato img {
+
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+    }
+
+    .tituloContato h1 {
+        color: #B79E5F;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .btn,
+    p {
+
+        display: none;
+
+    }
+
+    .formulario {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 30px;
+
+
+    }
+    form{
+        max-width: 600px;
+        width: 90%;
+
+    }
+
+    .formularioInfo{
+
+        max-width: 600px;
+        width: 90%;
+    }
+
+    .formulario h2 {
+
+        display: none;
+    }
+
+    .input {
+        width: 500px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #D9D9D9;
+
+    }
+
+    .btn2 {
+        width: 500px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
+
+    }
+
+
+}
+
+@media (max-width: 425px) {
+
+
+    .contato {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        justify-content: center;
+        align-content: center;
+        padding-top: 50px;
+    }
+
+    .tituloContato img {
+
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+    }
+
+    .tituloContato h1 {
+        color: #B79E5F;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .subtitle h2{
+
+        font-size: 25px;   
+        width: 229px;
+        color: #FFF;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+    
+
+    }
+
+    .btn,
+    p {
+
+        display: none;
+
+    }
+
+    .formulario {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 30px;
+
+
+    }
+
+    .formulario h2 {
+
+        display: none;
+    }
+
+    .input {
+        width: 250px;
+        height:     50px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #D9D9D9;
+
+    }
+
+    .btn2 {
+        width: 250px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
+
+    }
+    .formularioInfo{
+
+        width: 280px;
+    }
+
+
+}

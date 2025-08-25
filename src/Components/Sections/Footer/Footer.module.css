@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'animate.css';
+
+.footer {
+
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background: #1E2126;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+
+}
+
+.contentImg img {
+
+    padding-right: 20px;
+
+
+
+}
+
+.content p {
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media (max-width: 1366px) {
+
+    .footer {
+
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        background: #1E2126;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .contentImg img {
+
+        padding-right: 20px;
+        width: 40px;
+        height: auto;
+
+
+
+    }
+
+    .content p {
+        color: white;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+
+
+    .footer {
+        width: 100%;
+        height: auto;
+        background: #1E2126;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .contentImg img {
+        padding-right: 20px;
+        width: 40px;
+        height: auto;
+    }
+
+    .content p {
+        display: block;
+        color: white;
+        font-family: Montserrat, sans-serif;
+        /* Adiciona fallback para fontes */
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+
+    }
+}
