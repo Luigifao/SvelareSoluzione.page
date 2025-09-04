@@ -8,10 +8,7 @@ import SobreSection from './Sections/Sobre';
 import MercadoSection from './Sections/MercadoSection';
 import ContatoSection from './Sections/Contato';
 import Footer from '../../Components/Sections/Footer';
-
-
-
-
+import WhatsAppButton from '../../Components/WhatsAppButton';
 
 function Arbitragem() {
 
@@ -26,8 +23,7 @@ function Arbitragem() {
         <MercadoSection />
         <ContatoSection />
         <Footer />
-        
-        
+        <WhatsAppButton />
         </>
 
     )

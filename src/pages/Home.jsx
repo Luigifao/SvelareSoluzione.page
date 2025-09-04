@@ -7,6 +7,7 @@ import Sobre from '../Components/Sections/Sobre'
 import Parceiros from '../Components/Sections/Parceiros'
 import Contato from '../Components/Sections/Contato'
 import Footer from '../Components/Sections/Footer'
+import WhatsAppButton from '../Components/WhatsAppButton'
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <Parceiros />
       {/* <Contato /> */}
       <Footer />
+      <WhatsAppButton />
     </>
   )
 }

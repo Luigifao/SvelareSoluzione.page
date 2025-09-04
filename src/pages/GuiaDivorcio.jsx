@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './GuiaInventario.module.css';
 import Header from '../Components/Header';
 import Footer from '../Components/Sections/Footer';
+import WhatsAppButton from '../Components/WhatsAppButton';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -306,6 +307,7 @@ export default function GuiaDivorcio() {
                 </footer>
             </div>
             <Footer />
+            <WhatsAppButton />
         </>
     );
 }

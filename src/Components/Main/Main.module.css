@@ -350,23 +350,28 @@
     .mainPage {
         background-image: url(../../assets/img/backgroundMain.png);
         width: 100%;
-        height: 110vh;
+        height: 100vh;
         background-size: cover;
+        background-position: center;
         margin-top: -80px;
         display: flex;
         flex-direction: column;
+        padding-top: 80px;
+        box-sizing: border-box;
 
     }
 
     .container {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         align-content: center;
         justify-content: center;
         align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
 
     }
 
@@ -476,9 +481,8 @@
         top: 93%;
         left: 50%;
         align-items: center;
-        transform: translate(-50%, -50%);
         backdrop-filter: blur(10px);
-        background: rgba(0, 0, 0, 0.473);
+        background: rgba(30, 33, 38, 0.9);
         border-bottom: 1px solid rgba(255, 255, 255, 0);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         overflow-x: hidden;
@@ -540,45 +544,47 @@
 
 @media (max-width: 425px) {
 
-
     .mainPage {
         background-image: url(../../assets/img/backgroundMain.png);
         width: 100%;
-        height: 110vh;
+        height: 100vh;
         background-size: cover;
         background-position: center top;
         margin-top: -80px;
         display: flex;
         flex-direction: column;
+        padding-top: 80px;
+        box-sizing: border-box;
 
     }
 
     .logoMain {
         display: flex;
         flex-direction: column;
-        margin: O auto;
+        margin: 0 auto;
         justify-content: center;
         align-items: center;
         align-content: center;
-        width: 200px;
-        height: 200px;
-        margin-left: 1%;
-
+        width: 180px;
+        height: 180px;
 
     }
 
     .container {
         width: 100%;
-        height: auto;
-        padding-top: 30%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
 
     }
 
     .logoMain img {
-        width: 200px;
-        height: 200px;
-       
-    
+        width: 180px;
+        height: 180px;
     }
 
     .mainPage p {
@@ -603,48 +609,41 @@
     }
 
     .text h1 {
-
-        
-        width: 280px;
+        width: 300px;
         color: #FFF;
         font-family: Poppins;
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.3;
         text-align: center;
-
+        margin-top: 15px;
 
     }
 
     .text p {
-
+        width: 200px;
         color: #FFF;
         font-family: Poppins;
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 300;
-        line-height: normal;
+        line-height: 1.2;
         text-align: center;
-      
-       
-
-
-
+        margin-top: 10px;
 
     }
 
-
     .text button {
-        width: 215px;
-        height: 61px;
+        width: 280px;
+        height: 50px;
         flex-shrink: 0;
         border-radius: 10px;
         border: 1px solid #000;
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
-        margin-top: 40px;
+        margin-top: 20px;
         font-family: Poppins;
-        font-size: 18px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -734,40 +733,58 @@
 
 @media (max-width: 320px) {
 
+    .mainPage {
+        background-image: url(../../assets/img/backgroundMain.png);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center top;
+        margin-top: -80px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+
     .logoMain {
         display: flex;
         flex-direction: column;
-        margin: O auto;
+        margin: 0 auto;
         justify-content: center;
         align-items: center;
         align-content: center;
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
      
 
     }
     .container{
         width: 100%;
-        height: auto;
+        height: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
         
     }
 
     .logoMain img {
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
      
     }
 
     .mainPage p {
-        width: 130px;
-        display: flex;
-        color: white;
+        width: 180px;
         color: #FFF;
         font-family: Poppins;
-        font-size: 25px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 300;
-        line-height: normal;
+        line-height: 1.2;
+        text-align: center;
     }
 
 
@@ -781,47 +798,42 @@
     }
 
     .text h1 {
-
-     
         width: 280px;
         color: #FFF;
         font-family: Poppins;
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.3;
         text-align: center;
+        margin-top: 10px;
         
 
     }
 
     .text p {
-        
+        width: 180px;
         color: #FFF;
         font-family: Poppins;
         font-size: 14px;
         font-style: normal;
         font-weight: 300;
-        line-height: normal;
+        line-height: 1.2;
         text-align: center;
-        
-       
-
-
+        margin-top: 8px;
 
     }
 
-
     .text button {
-        width: 215px;
-        height: 61px;
+        width: 250px;
+        height: 45px;
         flex-shrink: 0;
         border-radius: 10px;
         border: 1px solid #000;
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
-        margin-top: 40px;
+        margin-top: 15px;
         font-family: Poppins;
-        font-size: 18px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;

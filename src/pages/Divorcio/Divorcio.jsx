@@ -10,6 +10,7 @@ import Requisitos from './Components/Sections/Requisitos';
 import Setenca2 from './Components/Sections/SetencaArbitral2';
 import Investimento from './Components/Sections/Investimento';
 import Tabela from './Components/Sections/TabelaComparativa';
+import WhatsAppButton from '../../Components/WhatsAppButton';
 
 function Divorcio() {
 
@@ -33,6 +34,7 @@ function Divorcio() {
         <Setenca2 />
         <Investimento />
         <Tabela />
+        <WhatsAppButton />
         </>
 
 

@@ -29,3 +29,54 @@ html {
   scroll-behavior: smooth;
 
 }
+
+/* WhatsApp Button Global Override */
+.whatsapp-button * {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.whatsapp-button {
+  position: fixed !important;
+  z-index: 999999 !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
+  display: block !important;
+  opacity: 1 !important;
+}
+
+/* Garantir visibilidade em dispositivos móveis */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: fixed !important;
+    z-index: 999999 !important;
+    bottom: 20px !important;
+    right: 16px !important;
+  }
+}
+
+/* REGRA GLOBAL PARA GARANTIR QUE O BOTÃO WHATSAPP SEMPRE APAREÇA */
+button[class*="whatsappButton"],
+*[class*="whatsappButton"],
+.whatsapp-button {
+  position: fixed !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: none !important;
+}
+
+/* Para qualquer container que possa estar escondendo */
+* {
+  position: relative;
+}
+
+button[class*="whatsappButton"] {
+  position: fixed !important;
+}

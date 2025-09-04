@@ -25,7 +25,7 @@ function About() {
             </div>
             <div className={styles.content}>
                 <h1>O QUE É?</h1>
-                <p>o divórcio extrajudicial por arbitragem é uma alternativa moderna, segura e plenamente legal para a dissolução de vìnculos matrimoniais. O procedimento é realizado fora do Poder Judiciário, com base na autonomia das partes e amparo legal reconhecido no ordenamento jurídico brasileiro.</p>
+                <p>o divórcpor arbitragem é uma alternativa moderna, segura e plenamente legal para a dissolução de vìnculos matrimoniais. O procedimento é realizado fora do Poder Judiciário, com base na autonomia das partes e amparo legal reconhecido no ordenamento jurídico brasileiro.</p>
             </div>
 
             <div className={styles.content2}>
